@@ -2,6 +2,6 @@ import { NextApiRequest, NextApiResponse } from 'next';
 
 export default (req: NextApiRequest, res: NextApiResponse) => {
   return (
-    {text: 'Helloooo', names: ['Nadine','Jian', 'Mischca']}
+    res.status(200).json({ data: 'some-data'})
   )
 };

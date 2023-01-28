@@ -1,20 +1,22 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
+import Layout from '../components/layout'
 
-export default function Home({ allPostsData }) {
+export default function Home({
+  allPostsData
+}) {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Bio</title>
       </Head>
       <section className={utilStyles.headingMd}>
       <p>Sample bio here</p>
       </section>
-
+      <Link href="/">← Back to home</Link>
     </Layout>
   )
 }

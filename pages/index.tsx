@@ -32,6 +32,9 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
+      <section>
+      <Link href="/bio">Bio</Link>
+      </section>
     </Layout>
   )
 }
